@@ -144,7 +144,6 @@ header {
 
 .header-container {
     width: 1024px;
-    height: 210px;
     padding: 27px 128px 17px 128px;
     margin: 0 auto;
     /* background-color: black;
@@ -165,8 +164,6 @@ header {
 .enter-signup {
     margin-top: 43px;
     width: 213px;
-    height: 77px;
-    position: relative;
 }
 
 input[type='text'] {
@@ -175,43 +172,45 @@ input[type='text'] {
     margin-top: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
-    opacity: 0.25;
+    border: 1px solid #ffffff25;
+    background-color: #ffffff10;
 }
 
 input::placeholder {
-    color: gray;
+    color: #ffffff;
     font-size: 14px;
-    z-index: 20;
-    padding-left: 12px;
+    padding-left: 9px;
     opacity: 1;
 }
 
+form {
+    position: relative;
+    padding: 2px 0px;
+}
+
 /* лупа */
-.enter-signup:before {
+form:before {
     content: '';
     position: absolute;
     display: block;
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     border: 2px solid white;
     z-index: 10;
-    bottom: 32px;
+    bottom: 22px;
     right: 14px;
 }
 
-.enter-signup::after {
+form::after {
     content: '';
     position: absolute;
     display: block;
-    width: 10px;
+    width: 8px;
     border-radius: 50%;
     border-top: 2px solid white;
-    z-index: 10;
-    bottom: 30px;
-    right: 8px;
+    bottom: 21px;
+    right: 10px;
     transform: rotate(45deg);
 }
 /* лупа */
@@ -222,10 +221,21 @@ input::placeholder {
 
 .ul-enter-signup > li {
     display: inline-block;
+    padding: 0px 5px;
 }
 .ul-enter-signup > li:first-child {
-    border-right: 1px solid #eec652;
-    padding-right: 3px;
+    padding-right: 8px;
+    position: relative;
+}
+.ul-enter-signup > li:first-child::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background-image: linear-gradient(to top, #ecbc35 0%, #f2d77c 100%);
+    width: 2px;
+    height: 17px;
+    top: 2px;
+    right: -2px;
 }
 
 .ul-enter-signup > li > a {
@@ -508,9 +518,8 @@ ul.men {
 
 .banner-info {
     width: 346px;
-    height: 183px;
     display: inline-block;
-    margin: 165px 571px 165px 199px;
+    margin: 170px 571px 165px 199px;
 }
 
 .banner-info > p:first-child {
@@ -581,9 +590,9 @@ ul.men {
     display: inline-block;
     position: absolute;
     width: 12px;
-    height: 10px;
-    top: 10px;
-    left: 14px;
+    height: 12px;
+    top: 12px;
+    left: 18px;
     border: solid #ffffff25;
     border-width: 0 1px 1px 0;
     transform: rotate(135deg);
@@ -601,11 +610,11 @@ ul.men {
     display: inline-block;
     position: absolute;
     width: 12px;
-    height: 10px;
-    top: 10px;
-    right: 14px;
+    height: 12px;
+    top: 12px;
+    right: 18px;
     border: solid #ffffff25;
-    border-width: 0 2px 2px 0;
+    border-width: 0 1px 1px 0;
     transform: rotate(315deg);
     z-index: 20;
 }
@@ -623,8 +632,7 @@ ul.men {
 
 .options {
     width: 1031px;
-    height: 192px;
-    margin: 40px auto 76px;
+    margin: 42px 280px 76px;
     font-size: 0;
 }
 
@@ -658,7 +666,7 @@ ul.men {
     background-color: #00000070;
     color: #ffffff;
 }
-.option-description > p {
+.option-description > h3 {
     padding: 20px 0px 6px 0px;
     margin: 0 auto;
     display: inline-block;
@@ -681,12 +689,17 @@ ul.men {
     z-index: 100;
 }
 
-.option-description-link:hover + div {
+/* .option-description-link:hover + div {
+    background-image: linear-gradient(to top, #ecbc35 0%, #f2d77c 100%);
+    opacity: 0.65;
+} */
+
+.options > ul > li:hover div {
     background-image: linear-gradient(to top, #ecbc35 0%, #f2d77c 100%);
     opacity: 0.65;
 }
 
-.option-description-link:hover + div > p {
+.options > ul > li:hover div > h3 {
     color: black;
     border-bottom: 1px solid #06060625;
 }
@@ -699,7 +712,7 @@ ul.men {
 
 /* section 3 */
 .hot {
-    margin: 0 auto;
+    margin: 80px auto 0px;
     /* position: relative; */
 }
 
@@ -781,11 +794,11 @@ h2 {
     background-image: linear-gradient(to left, #ecbc35 0%, #f2d77c 100%);
     top: 20px;
     right: -180px;
-    -webkit-transform: rotate(-90deg); //Chrome, Safari
-    -moz-transform: rotate(-90deg); //Firefox
-    -o-transform: rotate(-90deg); //Opera
-    -ms-transform: rotate(-90deg); //IE
-    transform: rotate(-90deg); //браузеры без префексов
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
     font-weight: 400;
     font-size: 16px;
     padding-left: 39px;
@@ -798,11 +811,11 @@ h2 {
     height: 20px;
     left: 10px;
     background: url(../img/sprites.png) -10px -10px;
-    -webkit-transform: rotate(90deg); //Chrome, Safari
-    -moz-transform: rotate(90deg); //Firefox
-    -o-transform: rotate(90deg); //Opera
-    -ms-transform: rotate(90deg); //IE
-    transform: rotate(90deg); //браузеры без префексов
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .btn-basket:hover {
@@ -866,12 +879,14 @@ h2 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.45);
 }
 
-.hot-example-li > a {
+.hot-example-li > h4 > a {
     display: block;
     font-size: 14px;
     color: #060606;
-    padding-top: 17px;
+    padding-top: 15px;
     line-height: 22px;
+    letter-spacing: 0px;
+    font-weight: 400;
 }
 
 .profitable {
@@ -925,9 +940,8 @@ h2 {
 
 .about-company {
     width: 1034px;
-    height: 460px;
     margin: 2px auto 0px;
-    padding-top: 40px;
+    padding: 40px 0px 143px;
     border-top: 1px solid #e5e5e5;
     font-size: 14px;
     line-height: 22px;
@@ -967,7 +981,7 @@ h2 {
 .btn-chat {
     position: absolute;
     bottom: 20px;
-    right: 0px;
+    right: 5px;
     padding-left: 25px;
 }
 
@@ -1002,8 +1016,7 @@ footer {
 
 .footer-container {
     width: 1024px;
-    height: 252px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .nav-footer {
@@ -1047,7 +1060,6 @@ footer {
 .phone-3-4 {
     width: 184px;
     height: 40px;
-    border-right: 1px solid #f0bf34;
     padding-left: 19px;
 }
 
