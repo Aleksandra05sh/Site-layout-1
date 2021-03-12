@@ -268,10 +268,10 @@ form::after {
     outline: none;
 }
 
-.ph-n-1 {
+/* .ph-n-1 {
     font-size: 18px;
     color: white;
-}
+} */
 
 .select {
     position: relative;
@@ -313,63 +313,6 @@ form::after {
     border-bottom: 1px dotted #f0cf67;
     font-size: 16px;
 }
-
-/* phone-call */
-/* .phone-call {
-    margin-top: 46px;
-}
-
-.phone {
-    font-size: 18px;
-    color: white;
-}
-
-.phone2 {
-    font-size: 22px;
-}
-
-.call {
-    padding: 9px 0px 0px 36px;
-}
-
-.select-css {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    width: 17px;
-    height: 16px;
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
-    opacity: 0.25;
-    margin-left: 9px;
-    margin-top: 3px;
-}
-
-.select {
-    position: relative;
-}
-
-.select:after {
-    content: '';
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border: solid white;
-    border-width: 0 1.5px 1.5px 0;
-    transform: rotate(45deg);
-    position: absolute;
-    z-index: 10;
-    right: 20%;
-    top: 20%;
-}
-
-.recall {
-    color: #f0cf67;
-    text-decoration: none;
-    border-bottom: 1px dotted #f0cf67;
-    font-size: 16px;
-} */
-/* phone-call */
 
 /* menu */
 .menu {
